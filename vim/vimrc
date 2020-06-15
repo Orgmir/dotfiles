@@ -1,3 +1,15 @@
+let mapleader = "\<Space>"
+
+" Split edit your vimrc. Type space, v, r in sequence to trigger
+nmap <leader>vr :sp $MYVIMRC<cr>
+
+" Source (reload) your vimrc. Type space, s, o in sequence to trigger
+nmap <leader>so :source $MYVIMRC<cr>
+
+imap jk <esc>
+imap kj <esc>
+imap <C-s> <esc>:w<cr>
+
 set nocompatible
 
 " enable syntax and plugins (for netrw)
@@ -30,7 +42,7 @@ set laststatus=2
 set ruler
 
 if !&scrolloff
-  set scrolloff=1
+  set scrolloff=4
 endif
 if !&sidescrolloff
   set sidescrolloff=5
