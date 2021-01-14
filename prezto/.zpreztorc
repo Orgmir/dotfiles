@@ -1,0 +1,20 @@
+zstyle ':prezto:*:*' color 'yes'
+
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'history' \
+  'history-substring-search' \
+  'spectrum' \
+  'utility' \
+  'completion' \
+  'autosuggestions' \
+  'git' \
+  'prompt'
+
+zstyle ':prezto:module:prompt' theme 'orgmir'
+
+zstyle ':prezto:module:utility' safe-ops 'no'
+
+zstyle ':completion:*:*:*:*:*' menu select=20
+
+zstyle ':prezto:module:autosuggestions' color 'yes'
